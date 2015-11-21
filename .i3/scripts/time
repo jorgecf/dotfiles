@@ -1,0 +1,10 @@
+#!/bin/bash
+
+publicipaddr=$(dig +short myip.opendns.com @resolver1.opendns.com)
+your_city=$(curl ipinfo.io/$publicipaddr | grep "city" | awk '{print $2}' | sed 's/[",]//g')
+
+if [ -z ${your_city+x} ]; then # evaluate variable to null
+	echo Today is $(date '+%d-%m-%Y, %H:%M');
+else 
+	echo Today is $(date '+%d-%m-%Y, %H:%M') in $your_city;
+fi
