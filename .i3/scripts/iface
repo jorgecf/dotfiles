@@ -60,5 +60,5 @@ PUBLICIPADDR=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
 #------------------------------------------------------------------------
 
-echo "IP address $PUBLICIPADDR connected trough $SSID" # full text
-echo "IP address $PUBLICIPADDR connected trough $SSID" # short text
+echo " IP address $PUBLICIPADDR connected trough $SSID" # full text
+echo " IP address $PUBLICIPADDR connected trough $SSID" # short text

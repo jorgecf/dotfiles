@@ -203,7 +203,7 @@ exec_always feh --bg-scale wall.jpg
 exec dropbox start
 
 exec_always compton # -f -D 1
-#exec --no-startup-id "i3-msg 'workspace Work; append_layout /home/jorge/.i3/workspace-Work.json'"
+exec --no-startup-id "i3-msg 'workspace Work; append_layout /home/jorge/.i3/workspace-Work.json'"
 
 # Pulse Audio controls
 set $sink `pactl list short sinks | grep RUNNING | cut -f1`

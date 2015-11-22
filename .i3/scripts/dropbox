@@ -11,12 +11,12 @@ if [ "$status" == "$stopped" ]; then
 	echo Dropbox isn\'t running  # Short message
 	echo "#FF0000" # Red when off
 elif [ "$status" == "$synced" ]; then
-	echo your dropbox is up-to-date # Long message
-	echo your dropbox is up-to-date # Short message
+	echo  your dropbox is up-to-date # Long message
+	echo  your dropbox is up-to-date # Short message
 	echo "#00ccFF" # Cyan when synced
 else
 	eta=$(dropbox status  | grep -E -oe -f --max-count=1 --regexp="([0-9]+ min)")
-	echo Dropbox is syncing... $eta # Long message
-	echo Dropbox is syncing... $eta # Short message
+	echo  dropbox is syncing... $eta # Long message
+	echo  dropbox is syncing... $eta # Short message
 	echo "#FFFF00" # Yellow when syncing
 fi
