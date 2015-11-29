@@ -39,15 +39,15 @@ $percent = $2;
 $full_text = "$percent%";
 
 if ($status eq 'Discharging') {
-	$full_text .= ' discharging';
+	$full_text .= ' [d ';
 } elsif ($status eq 'Charging') {
-	$full_text .= ' charging time';
+	$full_text .= ' [c ';
 }
 
 $short_text = $full_text;
 
 if ($acpi =~ /(\d\d:\d\d):/) {
-	$full_text .= " $1";
+	$full_text .= "$1]";
 
 }
 

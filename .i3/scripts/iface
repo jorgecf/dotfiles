@@ -56,9 +56,9 @@ case $BLOCK_BUTTON in
 esac
 
 SSID=$(iwgetid -r)
-PUBLICIPADDR=$(dig +short myip.opendns.com @resolver1.opendns.com)
+#PUBLICIPADDR=$(dig +short myip.opendns.com @resolver1.opendns.com)
 
 #------------------------------------------------------------------------
 
-echo " IP address $PUBLICIPADDR connected trough $SSID" # full text
-echo " IP address $PUBLICIPADDR connected trough $SSID" # short text
+echo " $SSID" # full text
+echo " $SSID" # short text

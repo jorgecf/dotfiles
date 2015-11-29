@@ -2,7 +2,7 @@
 export ZSH=$HOME/.oh-my-zsh
 
 # time that oh-my-zsh is loaded.
-ZSH_THEME="dieter"
+ZSH_THEME="bira2"
 
 # aliases for editing .zshrc file
 alias zconf="nano ~/.zshrc"
@@ -22,7 +22,7 @@ alias ohmyzsh="nano ~/.oh-my-zsh"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
