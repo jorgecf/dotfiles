@@ -3,10 +3,12 @@
 
 ! font
 xterm*faceName: xft:Inconsolata-11
-! copypaste the usual way, wihout shift
+! copypaste the usual way, without shift
 xterm*translations: #override \
 	Ctrl <KeyPress> C: copy-selection(CLIPBOARD) \n\
 	Ctrl <KeyPress> V: insert-selection(CLIPBOARD)
+	
+
 
 
 ! colors
@@ -67,17 +69,35 @@ xterm*translations: #override \
 *color7:                S_base2
 *color15:               S_base3
 
+
+
+
 ! rofi 
-#define rofi_act		#ff7400
+#define rofi_act	#ff7400
+#define solar_green	#859900
+#define black3		#222222
+#define solar_cyan	#2aa198
 
 rofi.lines:		15
 rofi.fixed-num-lines:	false
-rofi.columns:		3
-rofi.opacity:		0
-rofi.bw:		0
-rofi.hlbg:		$rofi_act
-rofi.hlfg:		#00000
+rofi.columns:		1
+rofi.opacity:		0	
+
+!rofi.fg:		solar_cyan
+!rofi.fg-urgent:	black3
+!rofi.fg-active:	black3
+
+rofi.hlbg:		solar_green
+rofi.hlbg-active:	solar_green
+rofi.hlbg-urgent:	solar_green	
+
+rofi.hlfg:		black3	
+
 rofi.font:		SSFD \12
+
+rofi.bc:		solar_green
+rofi.bw:		2	
+
 rofi.location:		0
-rofi.padding:		400
-rofi.width:		100
+rofi.padding:		15			
+rofi.width:		60
