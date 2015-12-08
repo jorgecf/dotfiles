@@ -13,7 +13,7 @@ set $mod Mod4
 
 # i3gaps
 for_window [class="^.*"] border pixel 2 
-smart_gaps on
+#smart_gaps on
 smart_borders on
 
 gaps inner 8 
@@ -137,14 +137,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 
 ##################### colors ###############################
-set $bg-main 	#002b36
-set $text-color	#f3f3f5
-set $sol-green	#859900
-set $solar-red	#dc322f
-set $bg-bar	#222222
-set $base3-white #fdf6e3
-set $electric-blue #00adee
-set $grayish-white #778899
+set $bg-main 		#002b36
+set $text-color		#f3f3f5
+set $sol-green		#859900
+set $solar-red		#dc322f
+set $bg-bar		#222222
+set $base3-white 	#fdf6e3
+set $electric-blue 	#00adee
+set $grayish-white 	#778899
 #############################################################
 
 
@@ -196,4 +196,7 @@ bar {
 		urgent_workspace   $bg-bar		$solar-red	$base3-white
 	}
 }
+
+
+bindsym Print exec scrot $HOME/Pictures/Screenshots/`date +%Y-%m-%d_%H:%M:%S`.png
 
