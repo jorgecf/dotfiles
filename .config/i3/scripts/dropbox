@@ -1,6 +1,6 @@
 #!/bin/bash
 
-status="$(dropbox status)"
+status="$(dropbox-cli status)"
 
 # in spanish
 synced="Actualizado"

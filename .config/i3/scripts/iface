@@ -62,3 +62,4 @@ SSID=$(iwgetid -r)
 
 echo " $SSID" # full text
 echo " $SSID" # short text
+echo "#00adee"
