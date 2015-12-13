@@ -49,10 +49,10 @@ xterm*translations: #override \
 
 
 ! rofi 
-#define rofi_act	#ff7400
-#define solar_green	#859900
-#define black3		#222222
-#define solar_cyan	#2aa198
+#define rofi_act		#ff7400
+#define solar_green		#859900
+#define black3			#222222
+#define solar_cyan		#2aa198
 #define electric_blue	#00adee
 
 rofi.lines:		15
@@ -60,15 +60,15 @@ rofi.fixed-num-lines:	false
 rofi.columns:		1
 rofi.opacity:		0	
 
-!rofi.fg:		solar_cyan
+!rofi.fg:			solar_cyan
 !rofi.fg-urgent:	black3
 !rofi.fg-active:	black3
 
-rofi.hlbg:		electric-blue		
-rofi.hlbg-active:	electric-blue
+rofi.hlbg:			electric_blue		
+rofi.hlbg-active:	electric_blue
 rofi.hlbg-urgent:	electric_blue	
 
-rofi.hlfg:		black3	
+rofi.hlfg:		#fffff	
 
 rofi.font:		SSFD \12
 
@@ -77,5 +77,5 @@ rofi.bw:		2
 
 rofi.location:		0
 rofi.padding:		15			
-rofi.width:		60
+rofi.width:			60
 
