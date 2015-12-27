@@ -83,3 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+# aliases
+alias pclean="sudo pacman -Rns $(pacman -Qqtd)"
+alias yclean="yaourt -Qtd"
