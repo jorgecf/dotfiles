@@ -87,3 +87,8 @@ source $ZSH/oh-my-zsh.sh
 # aliases
 alias pclean="sudo pacman -Rns $(pacman -Qqtd)"
 alias yclean="yaourt -Qtd"
+
+sdauptime() {
+	$var=sudo smartctl --all /dev/sda | grep Power_On_Hours | awk '{print $10}'
+	echo -n $var	
+}

@@ -6,6 +6,6 @@ xbindkeys
 
 
 # load wallpaper
-xsetbg -center /home/jorge/wall.jpg &
+xsetbg -center /home/jorge/wall2.jpg &
 
 exec i3

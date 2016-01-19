@@ -5,11 +5,12 @@ local user_host='%{$terminfo[bold]$fg[blue]%}[%n]%{$reset_color%}'
 
 local current_dir='%{$terminfo[bold]$fg[green]%}[%~]%{$reset_color%}'
 
+#ptime= ''
 
 local git_branch='$(git remote show origin | grep -m 1 -o -Ee "/[a-z]+.git"
 )%{$reset_color%}'
 
-PROMPT="${user_host}${current_dir}%B>>%b "
+PROMPT="${user_host}${current_dir}%B > %b "
 RPS1="${return_code}"
 
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg[yellow]%}<"
