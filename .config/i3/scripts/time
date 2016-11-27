@@ -1,8 +1,0 @@
-#!/bin/bash
-
-date=$(date '+%d-%m-%Y, %H:%M')
- 
-echo $date # long message
-echo $date # short message
-echo  "#00adee"
-
