@@ -97,6 +97,4 @@ picbackup () {
   zip -r -s 512  /run/media/$DEFAULT_USER/D592-93F6/BACKUP_FOTOS/fotografias_b.zip ~/Desktop/fotografias/ /run/media/$DEFAULT_USER/D592-93F6/BACKUP_FOTOS
 }
 
-
-
 DEFAULT_USER="jorgecf"
